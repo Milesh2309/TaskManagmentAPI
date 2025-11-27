@@ -12,7 +12,7 @@ class AuthController extends Controller
     
     public function login(Request $request)
     {
-        // validate incoming request — simple rules: email and password required
+        
         $data = $request->validate([
             'email' => 'required|email',
             'password' => 'required|string',
