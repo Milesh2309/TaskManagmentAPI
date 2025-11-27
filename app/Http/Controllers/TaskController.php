@@ -15,9 +15,7 @@ class TaskController extends Controller
         return response()->json(['data' => $tasks], 200);
     }
 
-    // POST /api/tasks
-    // Create a new task for the authenticated user.
-    // Validation rules: title required, priority must be one of Low/Medium/High.
+    
     public function store(Request $request)
     {
         $data = $request->validate([
