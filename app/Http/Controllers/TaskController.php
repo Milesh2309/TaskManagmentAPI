@@ -7,14 +7,7 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-    // TASK CONTROLLER (Simple, interviewer-friendly)
-    // Purpose: provide CRUD and status change endpoints for Task resources.
-    // Notes for a beginner: each method receives a request and returns JSON responses.
-    // Methods follow the exact API contract required by the project and should not
-    // change response formats or HTTP status codes (kept deliberately simple).
-    // GET /api/tasks
-    // Returns: list of tasks owned by the authenticated user (JSON)
-    // Main parts: get current user, query tasks for that user, return JSON.
+    
     public function index(Request $request)
     {
         $user = $request->user();
