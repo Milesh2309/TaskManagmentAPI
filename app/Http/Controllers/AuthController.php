@@ -8,12 +8,8 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    // AUTH CONTROLLER (Simple explanation for interviewers)
-    // Purpose: authenticate a user with email/password and return a personal access token.
-    // Behavior: validates input, checks credentials, and uses Laravel Sanctum to
-    // create a personal access token which is returned in the response as {"token": "<token>"}.
-    // The returned token should be used in requests as an Authorization Bearer token.
-
+    
+    
     public function login(Request $request)
     {
         // validate incoming request — simple rules: email and password required
